@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
-import auth from '../../../../firebase.init';
+
 import { signOut } from 'firebase/auth';
 import './Header.css'
 import toast from 'react-hot-toast';
+import auth from '../../../firebase.init';
 const Header = () => {
     const [navActive, setNavActive] = useState("nav-menu")
     const [toggleIcon, setToggleIcon] = useState('nav-toggler')

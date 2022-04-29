@@ -1,11 +1,11 @@
 import './App.css';
-import Header from './Pages/Home/sheared/Header/Header';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import { Toaster } from 'react-hot-toast';
 import ResetPass from './Pages/ResetPass/ResetPass';
+import Header from './Pages/Sheared/Header/Header';
 
 function App() {
   return (
