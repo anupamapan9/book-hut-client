@@ -14,7 +14,7 @@ const Header = () => {
             setToggleIcon('nav-toggler')
     }
     return (
-        <nav className='nav'>
+        <nav className='nav sticky top-0'>
             <Link to="/" className='nav_brand'>
                 Book Shop
             </Link>
@@ -23,7 +23,7 @@ const Header = () => {
                 <li className='nav-link'><Link to='#'>About</Link></li>
                 <li className='nav-link'><Link to='#'>Contact</Link></li>
                 <li className='nav-link'><Link to='#'>Blog</Link></li>
-                <li className='nav-link'><Link to='#'>Login</Link></li>
+                <li className='nav-link'><Link to='/login'>Login</Link></li>
             </ul>
             <div onClick={navToggler} className={toggleIcon}>
                 <div className='line1'></div>
