@@ -1,13 +1,13 @@
 import React from 'react';
-import useBooks from '../../../hooks/useBooks';
+import Books from '../Books/Books';
 import Slider from '../Slider/Slider';
 
 const Home = () => {
-    const [books] = useBooks()
-    console.log(books)
+
     return (
         <div>
             <Slider></Slider>
+            <Books></Books>
         </div>
     );
 };
