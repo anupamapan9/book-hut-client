@@ -10,7 +10,7 @@ const Books = () => {
 
             <div className='w-full grid justify-between items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10'>
                 {
-                    books.slice(0, 6).map(book => <BookCard book={book} key={book._key}></BookCard>)
+                    books.slice(0, 6).map(book => <BookCard book={book} key={book._id}></BookCard>)
                 }
             </div>
 

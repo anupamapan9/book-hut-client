@@ -8,6 +8,7 @@ import ResetPass from './Pages/ResetPass/ResetPass';
 import Header from './Pages/Sheared/Header/Header';
 import AddItems from './Pages/AddItems/AddItems';
 import RequireAuth from './Pages/Sheared/RequireAuth/RequireAuth';
+import Inventory from './Pages/Inventory/Inventory';
 
 function App() {
   return (
@@ -23,6 +24,12 @@ function App() {
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}> </Route>
         <Route path='/reset-pass' element={<ResetPass></ResetPass>}></Route>
+        <Route path='/inventory/:id' element={
+          <RequireAuth>
+            <Inventory></Inventory>
+          </RequireAuth>
+        }>
+        </Route>
         <Route path='/add-items' element={
           <RequireAuth>
             <AddItems></AddItems>
