@@ -20,5 +20,3 @@ const auth = getAuth(app)
 export default auth;
 
 
-// bookAuthor
-// EyEp98PqqKA4dTL9
