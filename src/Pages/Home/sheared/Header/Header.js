@@ -27,7 +27,7 @@ const Header = () => {
                 Book Shop
             </Link>
             <ul className={navActive}>
-                <li className='nav-link'><Link to='#'>Home</Link></li>
+                <li className='nav-link'><Link to='/'>Home</Link></li>
                 <li className='nav-link'><Link to='#'>About</Link></li>
                 <li className='nav-link'><Link to='#'>Contact</Link></li>
                 <li className='nav-link'><Link to='#'>Blog</Link></li>

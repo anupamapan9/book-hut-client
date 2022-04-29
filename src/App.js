@@ -5,6 +5,7 @@ import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import { Toaster } from 'react-hot-toast';
+import ResetPass from './Pages/ResetPass/ResetPass';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         }></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}> </Route>
+        <Route path='/reset-pass' element={<ResetPass></ResetPass>}></Route>
       </Routes>
     </div>
   );

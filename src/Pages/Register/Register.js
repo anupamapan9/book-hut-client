@@ -9,7 +9,7 @@ const Register = () => {
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
     const handelCreateUser = e => {
         e.preventDefault();
         const email = e.target.email.value;
@@ -17,6 +17,7 @@ const Register = () => {
         const confirmPassword = e.target.confirmPassword.value;
         if (password === confirmPassword) {
             createUserWithEmailAndPassword(email, password);
+            toast.success('Verification Email Send')
 
         } else {
             toast.error('Password Did Not Match')
@@ -24,6 +25,7 @@ const Register = () => {
         if (error) {
             toast.error(error.message)
         }
+        e.target.reset()
     }
     return (
         <div className='w-[300px] md:w-[400px] mx-auto my-[100px]'>
