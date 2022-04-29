@@ -1,14 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './Pages/Home/sheared/Header/Header';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
     <div>
+      <Toaster
+        position="bottom-center" />
       <Header></Header>
 
       <Routes>
