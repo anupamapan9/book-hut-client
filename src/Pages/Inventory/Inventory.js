@@ -35,7 +35,7 @@ const Inventory = () => {
                             <h5 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">${price}</h5>
                             <span className='text-gray-700 px-2'>Quantity: {quantity}</span>
                         </div>
-                        <p>Added By : {email}</p>
+                        <p className='underline text-gray-600'>Added By : {email}</p>
                     </div>
                 </div>
             </div>
