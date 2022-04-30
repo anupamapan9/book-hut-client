@@ -16,8 +16,8 @@ const Inventory = () => {
     }, [])
     const { _id, img, email, description, name, price, quantity, supplier } = book;
     return (
-        <div className='flex justify-around my-5'>
-            <div className='flex justify-center'>
+        <div className='flex flex-col md:flex-row justify-around my-5'>
+            <div className='flex justify-center '>
                 <div className="max-w-sm bg-white border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                     <div className='flex justify-center h-[400px] w-full'>
                         <img className='w-full' src={img} alt="" />
@@ -40,7 +40,16 @@ const Inventory = () => {
                 </div>
             </div>
             <div>
-
+                <h2 className='text-center text-[#00307E] font-bold text-2xl mb-5'>You can update your book Quantity here</h2>
+                <div className='text-center'>
+                    <button className='px-5 py-2 border-2 border-[#00307E] hover:bg-[#00307E] hover:text-white duration-200'>Delivered</button>
+                    <p className='text-[#F70000]'>*It will decrease your stock by one</p>
+                    <form className='my-10'>
+                        <h1>Update your Quantity</h1>
+                        <input type="number" name="quantity" id="quantity" required /> <br />
+                        <input className='px-3 cursor-pointer mt-3 py-2 border-2 border-[#00307E] hover:bg-[#00307E] hover:text-white duration-200' type="submit" value="Update Stock" />
+                    </form>
+                </div>
             </div>
         </div>
     );
