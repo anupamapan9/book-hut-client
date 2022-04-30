@@ -9,6 +9,7 @@ import Header from './Pages/Sheared/Header/Header';
 import AddItems from './Pages/AddItems/AddItems';
 import RequireAuth from './Pages/Sheared/RequireAuth/RequireAuth';
 import Inventory from './Pages/Inventory/Inventory';
+import ManageItems from './Pages/ManageItems/ManageItems';
 
 function App() {
   return (
@@ -30,6 +31,11 @@ function App() {
           </RequireAuth>
         }>
         </Route>
+        <Route path='/manage-items' element={
+          <RequireAuth>
+            <ManageItems></ManageItems>
+          </RequireAuth>
+        }></Route>
         <Route path='/add-items' element={
           <RequireAuth>
             <AddItems></AddItems>

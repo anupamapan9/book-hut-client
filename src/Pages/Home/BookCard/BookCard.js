@@ -6,7 +6,7 @@ const BookCard = ({ book }) => {
     return (
         <div className='flex justify-center'>
             <div className="max-w-sm bg-white border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-                <div className='flex justify-center w-full'>
+                <div className='flex h-[400px] justify-center w-full'>
                     <img className='w-full' src={img} alt="" />
                 </div>
                 <div className="p-5">

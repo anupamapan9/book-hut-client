@@ -11,6 +11,6 @@ const useBooks = () => {
                 console.log(err)
             })
     }, [])
-    return [books]
+    return [books, useBooks]
 }
 export default useBooks

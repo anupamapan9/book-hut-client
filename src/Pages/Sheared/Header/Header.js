@@ -30,11 +30,21 @@ const Header = () => {
             <ul className={navActive}>
                 <li className='nav-link'><Link to='/'>Home</Link></li>
                 <li className='nav-link'><Link to='#'>About</Link></li>
-                <li className='nav-link'><Link to='#'>Contact</Link></li>
-                <li className='nav-link'><Link to='#'>Blog</Link></li>
+
                 {
-                    !user ? <li className='nav-link'><Link to='/login'>Login</Link></li>
-                        : <button onClick={() => signOut(auth)}>Logout</button>
+                    !user ?
+
+
+                        <li className='nav-link'><Link to='/login'>Login</Link></li>
+
+
+                        :
+                        <>
+                            <li className='nav-link'><Link to='/add-items'>Add Items</Link></li>
+                            <li className='nav-link'><Link to='/manage-items'>Manage Item</Link></li>
+                            <button onClick={() => signOut(auth)}>Logout</button>
+                        </>
+
                 }
 
 
