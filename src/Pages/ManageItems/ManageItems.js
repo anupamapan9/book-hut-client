@@ -49,6 +49,9 @@ const ManageItems = () => {
                         <th className="px-6 py-3">
                             edit
                         </th>
+                        <th className="px-6 py-3">
+                            Update
+                        </th>
                     </tr>
                 </thead>
                 <tbody>

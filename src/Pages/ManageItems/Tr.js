@@ -1,5 +1,7 @@
 import React from 'react';
 import { AiTwotoneDelete } from 'react-icons/ai';
+import { AiFillTool } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 const Tr = ({ book, handelDelete }) => {
     const { img, name, supplier, _id } = book
     return (
@@ -15,6 +17,9 @@ const Tr = ({ book, handelDelete }) => {
             </td>
             <td className="px-6 py-4 ">
                 <button onClick={() => handelDelete(_id, name)}> <AiTwotoneDelete className='w-8 h-8 text-[#F70000] hover:text-[#f70000dc]' /></button>
+            </td>
+            <td className="px-6 py-4">
+                <Link to={`/inventory/${_id}`}> <AiFillTool className='w-8 h-8 text-[#004f0c] hover:text-[#004802f4]' /></Link>
             </td>
         </tr>
     );
