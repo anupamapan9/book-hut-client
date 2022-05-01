@@ -32,30 +32,34 @@ const ManageItems = () => {
     }
     return (
         <div className='flex justify-center'>
-            <table className='w-1/2 text-sm text-center text-gray-500 dark:text-gray-400'>
-                <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                    <tr>
-                        <th className="px-6 py-3">
-                            Image
-                        </th>
-                        <th className="px-6 py-3">
-                            Name (id)
-                        </th>
-                        <th className="px-6 py-3">
-                            edit
-                        </th>
-                        <th className="px-6 py-3">
-                            Update
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        books.map(book => <Tr book={book} key={book._id} handelDelete={handelDelete}></Tr>)
-                    }
+            <div className='md:w-1/2 '>
+                <h1 className='text-center text-[#00307E] font-extrabold text-5xl my-10'>All Books</h1>
+                <table className=' w-full text-sm text-center text-gray-500 dark:text-gray-400'>
 
-                </tbody>
-            </table>
+                    <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th className="px-6 py-3">
+                                Image
+                            </th>
+                            <th className="px-6 py-3">
+                                Name
+                            </th>
+                            <th className="px-6 py-3">
+                                edit
+                            </th>
+                            <th className="px-6 py-3">
+                                Update
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            books.map(book => <Tr book={book} key={book._id} handelDelete={handelDelete}></Tr>)
+                        }
+
+                    </tbody>
+                </table>
+            </div>
         </div>
 
     );

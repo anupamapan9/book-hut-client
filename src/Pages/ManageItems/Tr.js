@@ -17,7 +17,7 @@ const Tr = ({ book, handelDelete }) => {
                 <button onClick={() => handelDelete(_id, name)}> <AiTwotoneDelete className='w-8 h-8 text-[#F70000] hover:text-[#f70000dc]' /></button>
             </td>
             <td className="px-6 py-4">
-                <Link to={`/inventory/${_id}`}> <AiFillTool className='w-8 h-8 text-[#004f0c] hover:text-[#004802f4]' /></Link>
+                <Link to={`/inventory/${_id}`}> <AiFillTool className='w-8 h-8 inline-block text-[#004f0c] hover:text-[#004802f4]' /></Link>
             </td>
         </tr>
     );
