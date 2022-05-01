@@ -42,7 +42,7 @@ const AddItems = () => {
     return (
         <div className='my-10'>
             <h1 className='text-center text-[#00307E] font-extrabold text-5xl mb-10'>Available Books</h1>
-            <div className='my-10 w-1/2 m-auto'>
+            <div className='my-10 md:w-1/2 m-auto'>
 
                 <form onSubmit={handelAddBook} autoComplete='off' className='shadow-md p-10' >
                     <div className="relative z-0 w-full mb-6 group">
