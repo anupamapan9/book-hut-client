@@ -29,7 +29,7 @@ const Header = () => {
             </Link>
             <ul className={navActive}>
                 <li className='nav-link'><Link to='/'>Home</Link></li>
-                <li className='nav-link'><Link to='#'>About</Link></li>
+
 
                 {
                     !user ?
@@ -41,7 +41,7 @@ const Header = () => {
                         :
                         <>
                             <li className='nav-link'><Link to='/add-items'>Add Items</Link></li>
-                            <li className='nav-link'><Link to='/manage-items'>Manage Item</Link></li>
+                            <li className='nav-link'><Link to='/manage-items'>Manage Item</Link></li>  <li className='nav-link'><Link to='/my-items'>My Items</Link></li>
                             <button onClick={() => signOut(auth)}>Logout</button>
                         </>
 

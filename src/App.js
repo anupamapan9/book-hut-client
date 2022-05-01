@@ -10,6 +10,7 @@ import AddItems from './Pages/AddItems/AddItems';
 import RequireAuth from './Pages/Sheared/RequireAuth/RequireAuth';
 import Inventory from './Pages/Inventory/Inventory';
 import ManageItems from './Pages/ManageItems/ManageItems';
+import MyItems from './Pages/MyItems/MyItems';
 
 function App() {
   return (
@@ -39,6 +40,12 @@ function App() {
         <Route path='/add-items' element={
           <RequireAuth>
             <AddItems></AddItems>
+          </RequireAuth>
+        }>
+        </Route>
+        <Route path='/my-items' element={
+          <RequireAuth>
+            <MyItems></MyItems>
           </RequireAuth>
         }>
         </Route>

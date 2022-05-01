@@ -39,13 +39,8 @@ const ManageItems = () => {
                             Image
                         </th>
                         <th className="px-6 py-3">
-                            Name
+                            Name (id)
                         </th>
-
-                        <th className="px-6 py-3">
-                            Supplier
-                        </th>
-
                         <th className="px-6 py-3">
                             edit
                         </th>
