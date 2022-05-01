@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Tr from './Tr';
 
 const ManageItems = () => {
@@ -33,7 +34,12 @@ const ManageItems = () => {
     return (
         <div className='flex justify-center'>
             <div className='md:w-1/2 '>
-                <h1 className='text-center text-[#00307E] font-extrabold text-5xl my-10'>All Books</h1>
+                <h1 className='text-center text-[#00307E] font-extrabold text-4xl mt-5'>All Books</h1>
+                <div className='text-center'>
+                    <Link to={`/add-items`} className="inline-flex items-center py-2 px-3 my-5 text-sm font-medium text-center text-white bg-blue-700  hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Add Items
+                    </Link>
+                </div>
                 <table className=' w-full text-sm text-center text-gray-500 dark:text-gray-400'>
 
                     <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">

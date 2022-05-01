@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const Inventory = () => {
     const { id } = useParams();
@@ -98,6 +98,11 @@ const Inventory = () => {
                         <input type="number" name="quantity" id="quantity" required /> <br />
                         <input className='px-3 cursor-pointer mt-3 py-2 border-2 border-[#00307E] hover:bg-[#00307E] hover:text-white duration-200' type="submit" value="Update Stock" />
                     </form>
+                    <div className='text-center'>
+                        <Link to={`/manage-items`} className="inline-flex items-center py-2 px-3 my-10 text-sm font-medium text-center text-white bg-blue-700  hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Manage Inventory
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>
