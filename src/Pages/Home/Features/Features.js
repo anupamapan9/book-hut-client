@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FcComboChart, FcCableRelease, FcGlobe, FcViewDetails, FcPortraitMode, FcQuestions } from "react-icons/fc";
 const Features = () => {
     return (
-        <div className='my-5 md:mx-10'>
+        <div className='my-5 mx-10'>
             <h1 className='text-center text-[#00307E] font-extrabold text-2xl md:text-4xl mb-10'>All the features you'll ever need to manage <span className='my-underline relative'>your business</span> </h1>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5'>
                 <Link to="#" className="flex flex-col items-center bg-white border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 p-2 text-justify">
