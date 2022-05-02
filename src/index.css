@@ -5,3 +5,16 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.my-underline::after {
+  border-color: #00307E transparent transparent;
+  border-bottom: transparent;
+  border-radius: 50%;
+  border-top: 3px solid #00307E;
+  bottom: -35px;
+  content: "";
+  height: 30px;
+  left: 0;
+  position: absolute;
+  width: 90%;
+}

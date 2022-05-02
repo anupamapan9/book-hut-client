@@ -4,7 +4,6 @@ import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import toast from 'react-hot-toast';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
-import Spinner from '../Sheared/Spinner/Spinner';
 import SocialLogin from './SocialLogin';
 
 const Login = () => {

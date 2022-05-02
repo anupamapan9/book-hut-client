@@ -1,5 +1,6 @@
 import React from 'react';
 import Books from '../Books/Books';
+import Features from '../Features/Features';
 
 import Slider from '../Slider/Slider';
 
@@ -9,6 +10,7 @@ const Home = () => {
         <div>
             <Slider></Slider>
             <Books></Books>
+            <Features></Features>
 
         </div>
     );

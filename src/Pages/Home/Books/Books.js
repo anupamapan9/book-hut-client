@@ -7,9 +7,11 @@ const Books = () => {
     const [books] = useBooks()
     return (
         <div className='my-10'>
-            <h1 className='text-center text-[#00307E] font-extrabold text-5xl mb-10'>Available Books</h1>
 
-            <div className='w-full grid justify-between items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10'>
+            <h1 className='text-center text-[#00307E] font-extrabold text-4xl'><span className=' relative inline my-underline' > Available Books</span></h1>
+
+
+            <div className='w-full grid justify-between items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-12'>
                 {
                     books.slice(0, 6).map(book => <BookCard book={book} key={book._id}></BookCard>)
                 }

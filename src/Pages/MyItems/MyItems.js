@@ -53,8 +53,8 @@ const MyItems = () => {
     }, [user])
     return (
         <div className='flex justify-center'>
-            <div className='md:w-1/2'>
-                <h1 className='text-center text-[#00307E] font-extrabold text-5xl my-10'>All Books</h1>
+            <div className='md:w-1/2 text-center'>
+                <h1 className=' my-underline relative inline-block text-[#00307E] font-extrabold text-5xl my-10'>My books</h1>
                 <table className='w-full text-sm text-center text-gray-500 dark:text-gray-400'>
                     <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
