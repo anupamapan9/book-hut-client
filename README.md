@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Book Hut
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a book inventory management website Which is made for Book hut website.
 
-## Available Scripts
+## About This project
 
-In the project directory, you can run:
+- This website is made for inventory management. 
+- There user can a new book on add item page.
+- Manage items page user can delete a book from data base.
+- On inventory/:id page user can see the data of a specific Book and update it's on the stock or deliver a product 
+- On My Item page. the User can see the items only he added and delete them from data base.
+- In this site inventory,manage items, my items, add items pages are protected . Only Logged in user can visit this page.
+- JWT in implemented on this website for authorization
 
-### `npm start`
+### Technology used (Client Side)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- ReactRouter
+- FireBase
+- React Fire Base Hook
+- Tailwind 
+- Flow bite
+- SwiperJS
+- React Icon
+- React Hot Toast
+- Axios
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Technology used (Server Side)
 
-### `npm test`
+- cors
+- dotenv
+- express
+- jsonwebtoken
+- mongodb
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### DataBase
+- MongoDB
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Live Site Link [http://localhost:3000](http://localhost:3000)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Client Side GITHUB [https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-anupamapan9](https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-anupamapan9)
 
-### `npm run eject`
+Server Side GitHub [https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-anupamapan9](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-anupamapan9)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+StackOverflow Question Link= [https://stackoverflow.com/questions/72070044/syntaxerror-unexpected-token-2-in-json-at-position-0](https://stackoverflow.com/questions/72070044/syntaxerror-unexpected-token-2-in-json-at-position-0)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Thanks 
+- Anupam Mitra

@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 const BookCard = ({ book }) => {
     const { description, img, name, price, quantity, supplier, _id } = book;
     return (
-
         <div className='flex justify-center'>
             <div className="max-w-sm bg-white border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                 <div className='flex h-[400px] justify-center w-full'>

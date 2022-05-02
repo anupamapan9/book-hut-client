@@ -17,7 +17,6 @@ const Inventory = () => {
     }, [bookQuantity])
 
 
-
     //  data 
     const handelUpdateStock = e => {
         e.preventDefault();

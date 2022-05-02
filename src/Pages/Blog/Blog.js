@@ -44,8 +44,8 @@ const Blog = () => {
                     Can store unstructured, semi-structured, or structured data.
                 </p>
             </div>
-            <div>
-                <h2 className='text-xl font-bold my-5'> 2. What is the purpose of jwt and how does it work?</h2>
+            <div className='my-5'>
+                <h2 className='text-xl font-bold'> 2. What is the purpose of jwt and how does it work?</h2>
                 <p><span className='relative my-underline font-semibold'>Answer: </span>
                     <br />
                     <br />
