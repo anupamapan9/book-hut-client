@@ -8,7 +8,7 @@ const useBooks = () => {
             .then(res => {
                 setBooks(res.data)
             }).then(err => {
-                console.log(err)
+                // console.log(err)
             })
     }, [])
     return [books, useBooks]

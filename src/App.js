@@ -11,10 +11,11 @@ import RequireAuth from './Pages/Sheared/RequireAuth/RequireAuth';
 import Inventory from './Pages/Inventory/Inventory';
 import ManageItems from './Pages/ManageItems/ManageItems';
 import MyItems from './Pages/MyItems/MyItems';
+import Footer from './Pages/Sheared/Footer/Footer';
 
 function App() {
   return (
-    <div>
+    <>
       <Toaster
         position="bottom-center" />
       <Header></Header>
@@ -50,7 +51,8 @@ function App() {
         }>
         </Route>
       </Routes>
-    </div>
+      <Footer></Footer>
+    </>
   );
 }
 
