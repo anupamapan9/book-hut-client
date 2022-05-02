@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactMe = () => {
     return (
-        <div className='flex sm:flex-row flex-col items-center mx-10 my-10'>
+        <div className='flex sm:flex-row flex-col items-center sm:mx-10 my-10'>
             <div className='sm:w-1/2'>
                 <h1 className='text-center font-bold text-3xl mb-5'> <span className=' my-underline relative'>Contact Us</span> </h1>
                 <p className='text-center text-xl'>
@@ -10,7 +10,7 @@ const ContactMe = () => {
                 </p>
             </div>
             <div className='md:w-1/2 w-full' >
-                <form className='shadow-md sm:p-10 w-full' autoComplete='off'>
+                <form className='shadow-md p-10 w-full' autoComplete='off'>
                     <div className="grid xl:grid-cols-2 xl:gap-6">
                         <div className="relative z-0 w-full mb-6 group">
                             <input type="text" name="floating_first_name" id="floating_first_name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
