@@ -20,7 +20,7 @@ const AddItems = () => {
 
 
         // post to data base 
-        axios.post('http://localhost:5000/books', {
+        axios.post('https://floating-everglades-56290.herokuapp.com/books', {
             email,
             price,
             name,

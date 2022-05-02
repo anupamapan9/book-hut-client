@@ -17,7 +17,7 @@ const MyItems = () => {
     const handelDelete = (id, name) => {
         const confirm = window.confirm("Are You Sure Want To delete  " + name);
         if (confirm) {
-            const url = `http://localhost:5000/books/${id}`
+            const url = `https://floating-everglades-56290.herokuapp.com/books/${id}`
             axios.delete(url)
                 .then(res => {
                     if (res.data.deletedCount > 0) {
@@ -32,7 +32,7 @@ const MyItems = () => {
     useEffect(() => {
         const email = user.email;
         const getMyItems = async () => {
-            const url = `http://localhost:5000/my-items?email=${email}`;
+            const url = `https://floating-everglades-56290.herokuapp.com/my-items?email=${email}`;
             try {
                 const { data } = await axios.get(url, {
                     headers: {

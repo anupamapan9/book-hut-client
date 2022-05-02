@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 const useBooks = () => {
     const [books, setBooks] = useState([])
     useEffect(() => {
-        axios.get('http://localhost:5000/books')
+        axios.get('https://floating-everglades-56290.herokuapp.com/books')
             .then(res => {
                 setBooks(res.data)
             }).then(err => {

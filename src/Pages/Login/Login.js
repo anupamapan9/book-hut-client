@@ -24,7 +24,7 @@ const Login = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
         await signInWithEmailAndPassword(email, password)
-        const { data } = await axios.post('http://localhost:5000/login', { email });
+        const { data } = await axios.post('https://floating-everglades-56290.herokuapp.com/login', { email });
         localStorage.setItem('accessToken', data.accessToken)
 
     }

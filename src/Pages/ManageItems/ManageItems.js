@@ -6,7 +6,7 @@ import Tr from './Tr';
 const ManageItems = () => {
     const [books, setBooks] = useState([])
     useEffect(() => {
-        axios.get('http://localhost:5000/books')
+        axios.get('https://floating-everglades-56290.herokuapp.com/books')
             .then(res => {
                 setBooks(res.data)
             }).then(err => {
@@ -19,7 +19,7 @@ const ManageItems = () => {
     const handelDelete = (id, name) => {
         const confirm = window.confirm("Are You Sure Want To delete  " + name);
         if (confirm) {
-            const url = `http://localhost:5000/books/${id}`
+            const url = `https://floating-everglades-56290.herokuapp.com/books/${id}`
             axios.delete(url)
                 .then(res => {
                     if (res.data.deletedCount > 0) {

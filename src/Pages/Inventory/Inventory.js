@@ -8,7 +8,7 @@ const Inventory = () => {
     const [book, setBook] = useState({})
     const { img, email, description, name, price, quantity, supplier } = book;
     const [bookQuantity, setBookQuantity] = useState(quantity)
-    const url = `http://localhost:5000/inventory/${id}`
+    const url = `https://floating-everglades-56290.herokuapp.com/inventory/${id}`
     useEffect(() => {
         axios.get(url)
             .then(res => {
@@ -23,7 +23,7 @@ const Inventory = () => {
         const supplierInput = e.target.quantity.value;
         const newQuantityTotal = parseInt(quantity) + parseInt(supplierInput)
         const newQuantity = { newQuantityTotal }
-        const putUrl = `http://localhost:5000/update/${id}`
+        const putUrl = `https://floating-everglades-56290.herokuapp.com/update/${id}`
         fetch(putUrl, {
             method: "PUT",
             headers: {
@@ -45,7 +45,7 @@ const Inventory = () => {
     const deliveredBook = () => {
         const newQuantityTotal = parseInt(quantity) - 1
         const newQuantity = { newQuantityTotal }
-        const putUrl = `http://localhost:5000/update/${id}`
+        const putUrl = `https://floating-everglades-56290.herokuapp.com/update/${id}`
         fetch(putUrl, {
             method: "PUT",
             headers: {

@@ -38,7 +38,7 @@ This is a book inventory management website Which is made for Book hut website.
 
 
 
-Live Site Link [http://localhost:3000](http://localhost:3000)
+Live Site Link [https://book-hut-3072f.web.app/](https://book-hut-3072f.web.app/)
 
 Client Side GITHUB [https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-anupamapan9](https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-anupamapan9)
 
