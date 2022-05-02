@@ -32,7 +32,7 @@ const Footer = () => {
                                 <a href="https://github.com/anupamapan9" className="hover:underline ">Github</a>
                             </li>
                             <li>
-                                <Link to="https://discord.gg/4eeurUVvTy" className="hover:underline">Discord</Link>
+                                <Link to="#" className="hover:underline">Discord</Link>
                             </li>
                         </ul>
                     </div>
@@ -50,7 +50,7 @@ const Footer = () => {
                 </div>
             </div>
             <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <div className="sm:flex sm:items-center sm:justify-between text-center">
+            <div className="sm:flex sm:items-center sm:justify-around text-center">
                 <span className="text-sm text-white sm:text-center ">© 2022 <Link to="/" className="hover:underline">BookHut™</Link>. All Rights Reserved.
                 </span>
                 <div className="flex mt-4 space-x-6 justify-center sm:mt-0">

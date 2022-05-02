@@ -12,6 +12,7 @@ import Inventory from './Pages/Inventory/Inventory';
 import ManageItems from './Pages/ManageItems/ManageItems';
 import MyItems from './Pages/MyItems/MyItems';
 import Footer from './Pages/Sheared/Footer/Footer';
+import NotFound from './Pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
           </RequireAuth>
         }>
         </Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </>
