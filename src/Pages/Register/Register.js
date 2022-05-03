@@ -2,6 +2,8 @@ import React from 'react';
 import toast from 'react-hot-toast';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import Spinner from '../Sheared/Spinner/Spinner';
+import { useNavigate } from 'react-router-dom';
 const Register = () => {
 
     const [
@@ -10,6 +12,7 @@ const Register = () => {
         loading,
         error,
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+    const navigate = useNavigate()
     const handelCreateUser = e => {
         e.preventDefault();
         const email = e.target.email.value;
@@ -26,6 +29,13 @@ const Register = () => {
             toast.error(error.message)
         }
         e.target.reset()
+    }
+
+    if (loading) {
+        return <Spinner></Spinner>
+    }
+    if (user) {
+        navigate('/')
     }
     return (
         <div className='w-[300px] md:w-[400px] mx-auto my-[100px]'>
