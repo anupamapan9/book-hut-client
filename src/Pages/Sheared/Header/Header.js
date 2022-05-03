@@ -6,6 +6,7 @@ import { signOut } from 'firebase/auth';
 import './Header.css'
 import toast from 'react-hot-toast';
 import auth from '../../../firebase.init';
+import CustomLink from '../CustomLink/CustomLink';
 const Header = () => {
     const [navActive, setNavActive] = useState("nav-menu")
     const [toggleIcon, setToggleIcon] = useState('nav-toggler')
@@ -28,18 +29,18 @@ const Header = () => {
                 <img src="https://i.ibb.co/RCFtSgD/Book-Hut-1-removebg-preview.png" className='w-32 md:w-52' alt="" />
             </Link>
             <ul className={navActive}>
-                <li className='nav-link'><Link to='/'>Home</Link></li>
-                <li className='nav-link'><Link to='/blog'>Blog</Link></li>
+                <li className='nav-link'><CustomLink className='pb-1' to='/'>Home</CustomLink></li>
+                <li className='nav-link'><CustomLink className='pb-1' to='/blog'>Blog</CustomLink></li>
 
 
                 {
                     !user ?
-                        <li className='nav-link'><Link to='/login'>Login</Link></li>
+                        <li className='nav-link'><CustomLink className='pb-1' to='/login'>Login</CustomLink></li>
                         :
                         <>
-                            <li className='nav-link'><Link to='/add-items'>Add Items</Link></li>
-                            <li className='nav-link'><Link to='/manage-items'>Manage Item</Link></li>  <li className='nav-link'><Link to='/my-items'>My Items</Link></li>
-                            <button onClick={() => signOut(auth)}>Logout</button>
+                            <li className='nav-link'><CustomLink className='pb-1' to='/add-items'>Add Items</CustomLink></li>
+                            <li className='nav-link'><CustomLink className='pb-1' to='/manage-items'>Manage Item</CustomLink></li>  <li className='nav-link'><CustomLink className='pb-1' to='/my-items'>My Items</CustomLink></li>
+                            <button className='nav-link' onClick={() => signOut(auth)}>Logout</button>
                         </>
                 }
 

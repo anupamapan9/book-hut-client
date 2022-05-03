@@ -45,7 +45,7 @@ const Blog = () => {
                 </p>
             </div>
             <div className='my-5'>
-                <h2 className='text-xl font-bold'> 2. What is the purpose of jwt and how does it work?</h2>
+                <h2 className='text-xl font-bold'> 3. What is the purpose of jwt and how does it work?</h2>
                 <p><span className='relative my-underline font-semibold'>Answer: </span>
                     <br />
                     <br />

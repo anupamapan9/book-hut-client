@@ -8,6 +8,16 @@
     z-index: 5000000000;
 }
 
+.nav-link {
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+    padding-bottom: 2px;
+    border-bottom: 2px solid white;
+}
+
 .nav-brand {
     text-transform: uppercase;
     font-weight: bold;
