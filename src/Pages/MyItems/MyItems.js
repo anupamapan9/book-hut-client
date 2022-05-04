@@ -8,6 +8,7 @@ import auth from '../../firebase.init';
 import Tr from '../ManageItems/Tr';
 
 const MyItems = () => {
+    const [spinner, setSpinner] = useState(false)
     const navigate = useNavigate()
     const [user] = useAuthState(auth)
 
@@ -32,6 +33,7 @@ const MyItems = () => {
     useEffect(() => {
         const email = user.email;
         const getMyItems = async () => {
+            setSpinner(true)
             const url = `https://floating-everglades-56290.herokuapp.com/my-items?email=${email}`;
             try {
                 const { data } = await axios.get(url, {
@@ -40,6 +42,7 @@ const MyItems = () => {
                     }
                 })
                 setMyItems(data)
+                setSpinner(false)
             }
             catch (error) {
                 if (error.response.status === 403 || 401) {
@@ -52,7 +55,7 @@ const MyItems = () => {
         getMyItems();
     }, [user])
     return (
-        <div className='flex justify-center'>
+        <div className='flex justify-center min-h-[90vh]'>
             <div className='md:w-1/2 text-center'>
                 <h1 className=' my-underline relative inline-block text-[#00307E] font-extrabold text-5xl my-10'>My books</h1>
                 <table className='w-full text-sm text-center text-gray-500 dark:text-gray-400'>

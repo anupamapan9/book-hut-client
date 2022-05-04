@@ -1,15 +1,20 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Spinner from '../Sheared/Spinner/Spinner';
 import Tr from './Tr';
 
 const ManageItems = () => {
     const [books, setBooks] = useState([])
+    const [spinner, setSpinner] = useState(false)
     useEffect(() => {
+        setSpinner(true)
         axios.get('https://floating-everglades-56290.herokuapp.com/books')
             .then(res => {
                 setBooks(res.data)
+                setSpinner(false)
             }).then(err => {
+
                 // console.log(err)
             })
     }, [])
@@ -31,6 +36,11 @@ const ManageItems = () => {
                 })
         }
     }
+
+    if (spinner) {
+        return <Spinner></Spinner>
+    }
+
     return (
         <div className='flex justify-center text-center'>
             <div className='md:w-1/2 '>
